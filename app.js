@@ -46,12 +46,12 @@ app.post('/', function(req,res) {
 
   request(options, function(error, response, body) {
     if(error) {
-      res.sendFile(__dirname + "failure.html");
+      res.sendFile(__dirname + "/failure.html");
     } else {
       if(response.statusCode === 200) {
-        res.sendFile(__dirname + "success.html");
+        res.sendFile(__dirname + "/success.html");
       } else {
-        res.sendFile(__dirname + "failure.html");
+        res.sendFile(__dirname + "/failure.html");
       }
     }
   })
